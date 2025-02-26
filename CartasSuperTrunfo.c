@@ -1,46 +1,72 @@
 #include <stdio.h>
 
-#define NUM_CIDADES 32
+int main(){
 
-typedef struct {
-     char codigo[4];
-     char pais[30];
-     int populacao;
-     float area;
-     float pib;
-     int pontos_turisticos;
-} cidade;
+//declaracao das variaveis para a primeira carta
+    char estado1, estado2;
+    char codigo1[4], codigo2[4];
+    char nome_cidade1[50], nome_cidade2[50];
+    int populacao1[50], populacao2[50];
+    int pontos_turisticos1, pontos_turisticos2;
+    float area1, area2;
+    float pib1, pib2;
 
-int main() {
-    cidade cidades[NUM_CIDADES];
+         printf("\nJOGO SUPER TRUNFO\n");
+         printf("------CARTA------ 1");
 
-    printf("Super Trunfo - Paises\n");
 
-for (int i = 0; i < NUM_CIDADES; i++) {
-    printf("\nCidade %d:\n" , i + 1);   
-    printf("Codigo (ex:A01, A02, B01, B02...) ");
-    scanf("%s", cidades[i].codigo);
-    printf("país:");
-    scanf(" %[^\n]" , cidades[i].pais);
-    printf("populacao:");
-    scanf("%d", &cidades[i].populacao);
-    printf("area (km2):");
-    scanf("%f", &cidades[i].area);
-    printf("PIB(em bilhoes):");
-    scanf("%f", &cidades[i].pib);
-    printf("numero de pontos turisticos:");
-    scanf("%d", &cidades[i].pontos_turisticos);
+ //entrada de dados para a primeira carta
+  printf("digite o estado: (ex: A-H) \n");
+  scanf("%c", &estado1);
+
+  printf("digite o codigo da carta (ex: A01, B03):\n");
+  scanf("%s", codigo1);
+
+  printf("digite o nome da cidade:\n");
+  scanf("%s", &nome_cidade1);
+
+  printf("digite a populacao:\n");
+  scanf("%s", &populacao1);
+
+  printf("digite os pontos turisticos:\n");
+  scanf("%d", &pontos_turisticos1);
+
+  printf("digite a area:\n");
+  scanf("%f", &area1 );
+
+  printf("digite o PIB:\n");
+  scanf("%f", &pib);
+ 
+_____________printf("CARTA 2\n");____________
+
+
+ //entrada de dados para a segunda carta
+  printf("digite o estado:\n");
+  scanf("c", &estado2);
+
+  printf("digite o codigo:\n")
+  scanf("%s", codigo2);
+ //imprime na tela a mensagem "digite o nome da cidade"
+  printf("digite o nome da cidade:\n");
+  scanf("%s", &nome_cidade2);
+ //imprime na tela "digite a populacao"
+  printf("digite a populacao:\n");
+  scanf("s", populacao2);
+ 
+  printf("digite os pontos turisticos:\n");
+  scanf("%d", pontos_turisticos2);
+
+  printf("digite a area:\n"),
+  scanf("%f", &area2);
+
+  printf("digite o PIB:\n");
+  scanf("%f", &pib2);
+
+
+
+
+
 }
 
-printf("\nCartas cadastradas:\n");
-for (int i = 0; i < NUM_CIDADES; i++) {
-    printf("\ncodigo: %s\n", cidades[i].codigo);
-    printf("pais: %s\n, cidades[i].pais");
-    printf("populacao: %d\n", cidades[i].populacao);
-    printf("area: %.2f km2\n", cidades[i].area);
-    printf("PIB: %.2f bilhoes\n", cidades[i].pib);
-    printf("pontos turisticos: %d\n", cidades[i].pontos_turisticos);
- }
 
-return 0;
-}
+    
