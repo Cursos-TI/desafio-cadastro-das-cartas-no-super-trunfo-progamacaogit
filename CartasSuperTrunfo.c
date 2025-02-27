@@ -12,7 +12,7 @@ int main(){
     float pib1, pib2;
 
          printf("\nJOGO SUPER TRUNFO\n");
-         printf("------CARTA------ 1");
+         printf("------CARTA------ 1\n");
 
 
  //entrada de dados para a primeira carta
@@ -23,10 +23,10 @@ int main(){
   scanf("%s", codigo1);
 
   printf("digite o nome da cidade:\n");
-  scanf("%s", &nome_cidade1);
+  scanf("%s", nome_cidade1);
 
   printf("digite a populacao:\n");
-  scanf("%s", &populacao1);
+  scanf("%d", &populacao1);
 
   printf("digite os pontos turisticos:\n");
   scanf("%d", &pontos_turisticos1);
@@ -35,26 +35,27 @@ int main(){
   scanf("%f", &area1 );
 
   printf("digite o PIB:\n");
-  scanf("%f", &pib);
- 
-_____________printf("CARTA 2\n");____________
+  scanf("%f", &pib1);
+    
+    
+    printf("--------CARTA 2--------\n");
 
 
  //entrada de dados para a segunda carta
   printf("digite o estado:\n");
   scanf("c", &estado2);
 
-  printf("digite o codigo:\n")
-  scanf("%s", codigo2);
+  printf("digite o codigo:\n");
+  scanf("%c", codigo2);
  //imprime na tela a mensagem "digite o nome da cidade"
   printf("digite o nome da cidade:\n");
-  scanf("%s", &nome_cidade2);
+  scanf("%s", nome_cidade2);
  //imprime na tela "digite a populacao"
   printf("digite a populacao:\n");
   scanf("s", populacao2);
  
   printf("digite os pontos turisticos:\n");
-  scanf("%d", pontos_turisticos2);
+  scanf("%d", &pontos_turisticos2);
 
   printf("digite a area:\n"),
   scanf("%f", &area2);
@@ -63,7 +64,7 @@ _____________printf("CARTA 2\n");____________
   scanf("%f", &pib2);
 
 
-
+  return 0;
 
 
 }
