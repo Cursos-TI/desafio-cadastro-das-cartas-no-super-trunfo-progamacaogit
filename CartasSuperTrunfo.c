@@ -1,5 +1,5 @@
-#include <stdio.#include <stdio.h>
 
+#include <stdio.h>
 int main() {
     // Declaração das variáveis
     char estado1, estado2;
